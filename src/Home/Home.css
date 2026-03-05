@@ -1,0 +1,269 @@
+.logo {
+    margin-left: 150px;
+    margin-top: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li {
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+/* LI spacing */
+.li li {
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Link styling */
+.li li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.li li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+/* Hover on LI */
+.li li:hover a {
+    color: #0d6efd;
+}
+
+.li li:hover a::after {
+    width: 100%;
+}
+
+/* Icon container */
+.icon {
+    margin-top: 5px;
+    margin-left: 350px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Icon link (acts like LI) */
+.icon-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+/* Icon itself */
+.icon-item {
+    font-size: 25px;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+/* Underline effect */
+.icon-link::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #0d6efd;
+    /* blue */
+    transition: width 0.4s ease;
+    transform: translateX(-50%);
+}
+
+/* Hover like LI */
+.icon-link:hover .icon-item {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+.icon-link:hover::after {
+    width: 100%;
+}
+
+.backcolor {
+    background-color: rgba(124, 124, 124, 0.916);
+    height: 100px;
+}
+
+/* Parent container */
+/* Text inside banner */
+.banner-content {
+    position: absolute;
+    bottom: 330px;   /* Above button (button is 240px) */
+    left: 150px;
+    color: white;
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Image */
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button inside image */
+.discover-btn {
+    position: absolute;
+    bottom: 240px;
+    /* adjust position */
+    left: 150px;
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #0248b1;
+    color: white;
+    border: 2px solid #0248b1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Hover effect */
+.discover-btn:hover {
+    background-color: #002c6e;
+    border: 2px solid #002c6e;
+    color: white;
+}
+
+.head2 {
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+}
+
+.head3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+}
+
+.icon-home {
+    margin-left: 50px;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* moves to next line on small screen */
+    gap: 40px;
+}
+
+.button-home {
+    border: 2px solid black;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.button-home:hover {
+    background-color: black;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content inside image */
+.image-content {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.image-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.image-content p {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+.discover-btn2 {
+    padding: 12px 60px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.discover-btn2:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
